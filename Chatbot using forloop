@@ -1,0 +1,7 @@
+x = input("Please type something> ")
+for i in range(100):
+    if x == "Quit":
+        print("Goodbye!")
+        break
+    else:
+        print("You said: " + x)
