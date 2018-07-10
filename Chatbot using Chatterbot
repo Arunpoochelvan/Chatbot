@@ -1,0 +1,10 @@
+from chatterbot.trainers import ListTrainer
+from chatterbot import ChatBot
+bot=ChatBot('bot')
+conv=open("C:/Users/Qaraz1/Documents/python/chats.txt","r").readline()
+bot.set_trainer(ListTrainer)
+bot.train(conv)
+while True:
+   request=input('you:')
+   response=bot.get_response(request)
+   print('Bot:',response)
